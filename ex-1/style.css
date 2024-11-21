@@ -2,6 +2,92 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
 }
 
 /* Start coding here */
+:root {
+  --branding-color: #ff7f50;
+  --secondary-color: cornsilk;
+  --highlight-color :#d2691e;
+  --muted-colot: #a9a9a9;
+  --margin-level-1 :1px;
+  --margin-level-2 :5px;
+  --margin-level-3 :10px;
+  --margin-level-4 :15px;
+  --margin-level-5 :20px;
+  --padding-level-1 :1px;
+  --padding-level-2 :5px;
+  --padding-level-3 :10px;
+  --padding-level-4 :15px;
+  --padding-level-5 :20px;
+  --font-size-s :12px;
+  --font-size-m :16px;
+  --font-size-l :20px;
+  --font-size-xl :30px;
+  --font-size-xxl :50px;
+  --font-size-xxxl :100px;
+  --sm-max-width :600px;
+  --sm-min-width :600px;
+  --md-min-width :768px;
+  --xl-min-width :992px;
+  --xxl-min-width :1200px;
+}
+
+.introduction {
+  background-color: var(--secondary-color);
+  padding: var(--padding-level-5);
+
+}
+.introduction h1 {
+  color: var(--branding-color);
+  font-size: var(--font-size-xxxl);
+}
+.introduction:hover h1{
+  color: var(--highlight-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .introduction {
+    padding: var(--padding-level-1);
+  }
+  .introduction h1 {
+    font-size: var(--font-size-s);
+  }
+}
+@media only screen and (min-width: 600px) {
+  .introduction {
+    padding: var(--padding-level-2);
+  }
+  .introduction h1 {
+    font-size: var(--font-size-m);
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .introduction {
+    padding: var(--padding-level-3);
+  }
+  .introduction h1 {
+    font-size: var(--font-size-l);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .introduction {
+    padding: var(--padding-level-5);
+    box-shadow: var(--highlight-color);
+  }
+  .introduction h1 {
+    font-size: var(--font-size-xl);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .introduction {
+    padding: var(--padding-level-5);
+  }
+  .introduction h1 {
+    font-size: var(--font-size-xxxl);
+  }
+}
